@@ -1,0 +1,29 @@
+-Metacaracteres Basicos:
+    .: Coincide con cualquier carácter excepto salto de línea.
+    ^: Coincide con el inicio de una línea.
+    $: Coincide con el final de una línea.
+    \b: Coincide con un límite de palabra (inicio o fin de palabra).
+    \d: Coincide con un dígito (equivalente a [0-9]).
+    \D: Coincide con cualquier carácter que no sea un dígito.
+    \w: Coincide con un carácter de palabra (letra, dígito o guión bajo).
+    \W: Coincide con cualquier carácter que no sea de palabra.
+    \s: Coincide con un espacio en blanco (espacio, tabulación, salto de línea, etc.).
+    \S: Coincide con cualquier carácter que no sea espacio en blanco.
+    
+-Cuantificadores:
+
+    *: Coincide con cero o más repeticiones del elemento anterior.
+    +: Coincide con una o más repeticiones del elemento anterior.
+    ?: Coincide con cero o una repetición del elemento anterior.
+    {n}: Coincide exactamente con n repeticiones del elemento anterior.
+    {n,}: Coincide con al menos n repeticiones del elemento anterior.
+    {n,m}: Coincide con entre n y m repeticiones del elemento anterior.
+
+-Caracteres especiales:
+    [abc]: Coincide con cualquiera de los caracteres a, b o c.
+    [^abc]: Coincide con cualquier carácter que no sea a, b ni c.
+    (expr): Agrupa expresiones para aplicar cuantificadores u operadores a grupos enteros.
+    |: Realiza una coincidencia alternativa (OR).
+
+-Caracteres escapados:
+    \: Se utiliza para escapar un carácter especial, permitiéndote coincidir con el carácter literal.
